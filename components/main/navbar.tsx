@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
@@ -75,17 +75,6 @@ export const Navbar = () => {
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </Link>
             ))}
-
-            {/* Source Code */}
-            {/* <Link
-              href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="relative cursor-pointer hover:text-[rgb(112,66,248)] transition-colors duration-200 whitespace-nowrap group py-2"
-            >
-              Source Code
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-            </Link> */}
           </div>
         </div>
 
@@ -114,48 +103,56 @@ export const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-xl p-6 flex flex-col items-center text-gray-300 md:hidden border-t border-[rgba(112,66,248,0.2)] rounded-b-2xl shadow-2xl">
-          {/* Links */}
-          <div className="flex flex-col items-center gap-5 w-full">
-            {NAV_LINKS.map((link) => (
+      {/* Mobile Menu Overlay with Mount/Unmount Animation Lifecycle Tracking */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0, y: -20 }}
+            animate={{ opacity: 1, height: "auto", y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-xl p-6 flex flex-col items-center text-gray-300 md:hidden border-t border-[rgba(112,66,248,0.2)] rounded-b-2xl shadow-2xl overflow-hidden"
+          >
+            {/* Links */}
+            <div className="flex flex-col items-center gap-5 w-full">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.link}
+                  className="w-full text-center py-1 cursor-pointer hover:text-[rgb(112,66,248)] transition text-lg font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.title}
+                </Link>
+              ))}
               <Link
-                key={link.title}
-                href={link.link}
-                className="w-full text-center py-1 cursor-pointer hover:text-[rgb(112,66,248)] transition text-lg font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.title}
-              </Link>
-            ))}
-            <Link
-              href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="w-full text-center py-1 cursor-pointer hover:text-[rgb(112,66,248)] transition text-lg font-medium border-t border-gray-800 pt-4 mt-1"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Source Code
-            </Link>
-          </div>
-
-          {/* Social Icons */}
-          <div className="flex justify-center gap-8 mt-6 border-t border-gray-800 pt-5 w-full">
-            {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link
-                href={link}
+                href={LINKS.sourceCode}
                 target="_blank"
                 rel="noreferrer noopener"
-                key={name}
+                className="w-full text-center py-1 cursor-pointer hover:text-[rgb(112,66,248)] transition text-lg font-medium border-t border-gray-800 pt-4 mt-1"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <Icon className="h-7 w-7 text-white hover:text-[rgb(112,66,248)] transition-colors" />
+                Source Code
               </Link>
-            ))}
-          </div>
-        </div>
-      )}
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex justify-center gap-8 mt-6 border-t border-gray-800 pt-5 w-full">
+              {SOCIALS.map(({ link, name, icon: Icon }) => (
+                <Link
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  key={name}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Icon className="h-7 w-7 text-white hover:text-[rgb(112,66,248)] transition-colors" />
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
