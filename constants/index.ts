@@ -106,12 +106,12 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   image: "reactquery.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -193,12 +193,12 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   image: "reactquery.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -266,16 +266,16 @@ export const BACKEND_SKILL = [
 
 export const FULLSTACK_SKILL = [
   {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
+    skill_name: "Next.js 14",
+    image: "next.png",
+    width: 80,
+    height: 80,
   },
   {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
+    skill_name: "Cloudflare",
+    image: "cloudflare.png",
+    width: 130,
+    height: 130,
   },
   {
     skill_name: "Docker",
@@ -293,10 +293,10 @@ export const FULLSTACK_SKILL = [
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
+    skill_name: "Supabase",
+    image: "supabase.png",
+    width: 70,
+    height: 70,
   },
 ] as const;
 
