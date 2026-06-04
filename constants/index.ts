@@ -176,10 +176,10 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
+    skill_name: "Wordpress",
+    image: "wordpress.png",
+    width: 110,
+    height: 110,
   },
   {
     skill_name: "React",
