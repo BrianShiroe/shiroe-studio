@@ -13,20 +13,19 @@ export const Footer = () => {
       <div className="absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-[rgb(112,66,248)]/40 to-transparent blur-sm" />
 
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-        
         {/* Left Side: Brand Column */}
         <div className="flex flex-col space-y-4 max-w-sm">
           <div className="text-[20px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 select-none">
             brianshiroe
           </div>
           <p className="text-[14px] text-gray-400 font-light leading-relaxed tracking-wide">
-            Crafting high-performance web applications and fluid interactive digital experiences.
+            Web design, digital growth, and operations in one package. Building high-performing SEO websites and
+            polished digital experiences.
           </p>
         </div>
 
         {/* Right Side: Columns Panel */}
         <div className="flex flex-row gap-16 md:gap-24 flex-wrap">
-          
           {/* Column 1: Social Profiles (External Links) */}
           <div className="flex flex-col items-start justify-start min-w-[120px]">
             <h3 className="font-semibold text-[13px] uppercase tracking-[0.15em] text-[rgb(112,66,248)] mb-6 select-none">
@@ -54,7 +53,7 @@ export const Footer = () => {
             <h3 className="font-semibold text-[13px] uppercase tracking-[0.15em] text-[rgb(112,66,248)] mb-6 select-none">
               Navigation
             </h3>
-            
+
             {/* Inner row splits navigation down into two side-by-side cleanly tracking lists */}
             <div className="grid grid-cols-2 gap-x-12 gap-y-4 w-full">
               {/* Left Navigation Stack */}
@@ -83,7 +82,7 @@ export const Footer = () => {
                     <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                   </Link>
                 ))}
-                
+
                 {/* Source Code link naturally stacks directly below the split list elements */}
                 {/* <Link
                   href={LINKS.sourceCode}
@@ -97,15 +96,12 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       {/* Bottom Row: Copyright */}
       <div className="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-gray-800/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] text-gray-500 font-light tracking-wide">
-        <div className="select-none">
-          &copy; {new Date().getFullYear()} brianshiroe. All rights reserved.
-        </div>
+        <div className="select-none">&copy; {new Date().getFullYear()} brianshiroe. All rights reserved.</div>
         <div className="flex gap-6 text-gray-600 select-none">
           <span>Built with Next.js & Framer Motion</span>
         </div>

@@ -1,4 +1,4 @@
-import { EnvelopeIcon, PhoneIcon, MapPinIcon, SparklesIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon, MapPinIcon, SparklesIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 
 const contactItems = [
   {
@@ -14,10 +14,10 @@ const contactItems = [
     icon: PhoneIcon,
   },
   {
-    title: "Website",
-    value: "brianshiroe.com",
-    href: "https://brianshiroe.com",
-    icon: GlobeAltIcon,
+    title: "GitHub",
+    value: "github.com/brianshiroe",
+    href: "https://github.com/brianshiroe",
+    icon: CodeBracketIcon,
   },
   {
     title: "Location",
@@ -40,10 +40,10 @@ export const Contact = () => {
               Contact Me
             </span>
             <h1 className="text-[40px] md:text-[48px] font-semibold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[rgb(112,66,248)]">
-              Let&apos;s turn your next idea into a launch-ready experience.
+              Let's turn your next idea into a launch-ready experience.
             </h1>
             <p className="max-w-[620px] text-gray-400 text-[16px] md:text-[17px] leading-relaxed font-light tracking-wide">
-              I&apos;m available for freelance projects, long-term collaborations, and digital operations work in Dubai or remote. Select any channel to discuss website design, digital marketing assets, or custom system builds.
+              I'm available for freelance projects, long-term collaborations, and digital operations work in Dubai or remote. Select any channel to discuss website design, digital marketing assets, or custom system builds.
             </p>
           </div>
 
