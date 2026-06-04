@@ -49,7 +49,7 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/logo3.png"
+            src="/logo.png"
             alt="Logo"
             width={50}
             height={50}

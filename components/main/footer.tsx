@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
 export const Footer = () => {
@@ -13,10 +14,23 @@ export const Footer = () => {
       <div className="absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-[rgb(112,66,248)]/40 to-transparent blur-sm" />
 
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-        {/* Left Side: Brand Column */}
+        
+        {/* Left Side: Brand Column with logo3.png Integration */}
         <div className="flex flex-col space-y-4 max-w-sm">
-          <div className="text-[20px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 select-none">
-            brianshiroe
+          <div className="flex items-center gap-3 select-none">
+            <div className="relative w-7 h-7 flex items-center justify-center">
+              <Image 
+                src="/logo.png" 
+                alt="BH Brand Logo"
+                width={80}
+                height={80}
+                priority
+                className="object-contain"
+              />
+            </div>
+            <div className="text-[20px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
+              brianshiroe
+            </div>
           </div>
           <p className="text-[14px] text-gray-400 font-light leading-relaxed tracking-wide">
             Web design, digital growth, and operations in one package. Building high-performing SEO websites and
@@ -82,17 +96,6 @@ export const Footer = () => {
                     <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                   </Link>
                 ))}
-
-                {/* Source Code link naturally stacks directly below the split list elements */}
-                {/* <Link
-                  href={LINKS.sourceCode}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="relative flex items-center text-[15px] text-gray-400 hover:text-[rgb(112,66,248)] transition-colors duration-200 group py-1 w-max"
-                >
-                  <span className="font-light tracking-wide">Source Code</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                </Link> */}
               </div>
             </div>
           </div>
