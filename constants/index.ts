@@ -1,5 +1,73 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { RxDiscordLogo, RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from "react-icons/rx";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { FaFacebook } from "react-icons/fa";
+
+export const LINKS = {
+  sourceCode: "https://github.com/brianshiroe/space-portfolio",
+};
+
+export const NAV_LINKS = [
+  {
+    title: "Home",
+    link: "#home",
+  },
+  {
+    title: "About Me",
+    link: "#about-me",
+  },
+  {
+    title: "Skills",
+    link: "#skills",
+  },
+  {
+    title: "Projects",
+    link: "#projects",
+  },
+  {
+    title: "Contact Me",
+    link: "#contact",
+  },
+] as const;
+
+export const SOCIALS = [
+  {
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/brianshiroe",
+  },
+  {
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://linkedin.com/in/brianshiroe",
+  },
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    link: "https://facebook.com/brianshiroe",
+  },
+] as const;
+
+export const FOOTER_DATA = [
+  {
+    title: "Community",
+    data: [
+      {
+        name: "GitHub",
+        icon: RxGithubLogo,
+        link: "https://github.com/brianshiroe",
+      },
+      {
+        name: "LinkedIn",
+        icon: RxLinkedinLogo,
+        link: "https://linkedin.com/in/brianshiroe",
+      },
+      {
+        name: "Facebook",
+        icon: FaFacebook,
+        link: "https://facebook.com/brianshiroe",
+      },
+    ],
+  },
+] as const;
 
 export const SKILL_DATA = [
   {
@@ -79,24 +147,6 @@ export const SKILL_DATA = [
     image: "mongodb.png",
     width: 40,
     height: 40,
-  },
-] as const;
-
-export const SOCIALS = [
-  {
-    name: "GitHub",
-    icon: RxGithubLogo,
-    link: "https://github.com/brianshiroe",
-  },
-  {
-    name: "LinkedIn",
-    icon: RxLinkedinLogo,
-    link: "https://linkedin.com/in/brianshiroe",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com/brianshiroe",
   },
 ] as const;
 
@@ -233,7 +283,6 @@ export const FULLSTACK_SKILL = [
     width: 70,
     height: 70,
   },
-
   {
     skill_name: "Figma",
     image: "figma.png",
@@ -274,93 +323,3 @@ export const PROJECTS = [
     link: "https://example.com",
   },
 ] as const;
-
-export const FOOTER_DATA = [
-  {
-    title: "Community",
-    data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://x.com/_sanidhyy",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
-  },
-] as const;
-
-export const NAV_LINKS = [
-  {
-    title: "Home",
-    link: "#home",
-  },
-  {
-    title: "About Me",
-    link: "#about-me",
-  },
-  {
-    title: "Skills",
-    link: "#skills",
-  },
-  {
-    title: "Projects",
-    link: "#projects",
-  },
-  {
-    title: "Contact Me",
-    link: "#contact", // Connects to your contact/footer element's id tag
-  },
-] as const;
-
-export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
-};
