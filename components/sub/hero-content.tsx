@@ -45,7 +45,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Web Developer specializing in high-performance frontend engineering, component-based architectures, and technical SEO layout configurations. Turning polished design styles into scalable web reality.
+          I specialize in high-end UI/UX design, modern web development, and impact-driven graphics design and branding. I translate distinct brand strategies into immersive layouts, fluid user interfaces, and memorable visual assets.
         </motion.p>
 
         {/* <motion.a
