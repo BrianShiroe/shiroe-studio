@@ -2,14 +2,45 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Hook into the page's vertical scroll position
+  const { scrollY } = useScroll();
+
+  // Define dynamic style transformations based on scroll pixel threshold (0px to 100px)
+  const navbarWidth = useTransform(scrollY, [0, 100], ["100%", "90%"]);
+  const navbarTop = useTransform(scrollY, [0, 100], ["0px", "12px"]);
+  const borderRadius = useTransform(scrollY, [0, 100], ["0px", "9999px"]);
+  const backgroundColor = useTransform(
+    scrollY, 
+    [0, 100], 
+    ["rgba(3, 0, 20, 0.15)", "rgba(3, 0, 20, 0.75)"]
+  );
+  const borderStyle = useTransform(
+    scrollY,
+    [0, 100],
+    ["1px solid rgba(112, 66, 248, 0)", "1px solid rgba(112, 66, 248, 0.25)"]
+  );
+
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
+    // Wrap with motion.div and assign the dynamic layout variants
+    <motion.div 
+      style={{
+        width: navbarWidth,
+        top: navbarTop,
+        borderRadius: borderRadius,
+        backgroundColor: backgroundColor,
+        border: borderStyle,
+        left: "50%",
+        translateX: "-50%" // Anchors the shrinking navbar perfectly to the horizontal center
+      }}
+      className="h-[65px] fixed shadow-lg shadow-[#2A0E61]/30 backdrop-blur-md z-50 px-10 transition-shadow duration-300"
+    >
       {/* Navbar Container */}
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
@@ -25,7 +56,8 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          {/* Typo fixed from 'md:selffont-bold' to 'items-center font-bold' */}
+          <div className="hidden md:flex items-center font-bold ml-[10px] text-gray-300">John Doe</div>
         </Link>
 
         {/* Web Navbar */}
@@ -72,13 +104,13 @@ export const Navbar = () => {
           className="md:hidden text-white focus:outline-none text-4xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          ☰
+          {isMobileMenuOpen ? "✕" : "☰"}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center text-gray-300 md:hidden">
+        <div className="absolute top-[65px] left-0 w-full bg-[#030014] rounded-b-2xl p-5 flex flex-col items-center text-gray-300 md:hidden border-t border-[rgba(112,66,248,0.2)] shadow-xl">
           {/* Links */}
           <div className="flex flex-col items-center gap-4">
             {NAV_LINKS.map((link) => (
@@ -117,6 +149,6 @@ export const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
