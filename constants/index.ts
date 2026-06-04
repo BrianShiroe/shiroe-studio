@@ -362,7 +362,7 @@ export const PROJECTS = [
     description:
       "A beautifully understated, content-first portfolio designed for a creative professional, stripping away visual noise to focus strictly on typography, space, and core projects.",
     image: "/projects/simple-portfolio.png",
-    link: "https://example.com",
+    link: "https://maria-zorene.vercel.app/",
     tags: ["Next.js", "Minimal Design", "Tailwind CSS"],
   },
 ] as const;
