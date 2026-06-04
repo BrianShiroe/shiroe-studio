@@ -302,24 +302,67 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "AuraX Luxury Footwear",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      "A high-end digital showroom for luxury footwear, featuring immersive scroll-based animations, architectural layouts, and a fluid user experience designed for premium retail storytelling.",
+    image: "/projects/aurax.png",
+    link: "https://aurax-luxury-footwear-landing-page.vercel.app/",
+    tags: ["React", "Framer Motion", "Tailwind CSS"],
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "BlackScale Real Estate",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      "A premium frontend interface design for a modern real estate platform, combining editorial layouts with responsive, fluid structural grid layouts built for luxury properties.",
+    image: "/projects/blackscale.png",
+    link: "https://greyscale-real-estate.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "Space Themed Website",
+    title: "Noor Label",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
+      "A premium fashion portfolio showcasing architectural silhouettes and modest luxury. Focuses on high-end visual storytelling, scroll-based interactions, and a minimalist aesthetic rooted in Dubai's design culture.",
+    image: "/projects/noor-label.png",
+    link: "https://noor-label.vercel.app/",
+    tags: ["Next.js", "Shopify", "Headless Commerce"],
+  },
+  {
+    title: "GameTree Ecosystem",
+    description:
+      "A comprehensive e-commerce ecosystem featuring dedicated client workflows, secure Stripe processing pipelines, dynamic shipping configurations, and a full dashboard suite for seamless product management.",
+    image: "/projects/gametree.png",
+    link: "https://gametree.vercel.app/",
+    tags: ["Next.js", "Supabase", "Stripe API"],
+  },
+  {
+    title: "Samurai Agency Web",
+    description:
+      "An immersive agency landing page leveraging fluid Lenis smooth scrolling, micro-interactions, and cinematic Framer Motion timelines to deliver a highly interactive digital experience.",
+    image: "/projects/saurai-web.png", // Maintained your file naming convention
+    link: "https://samurai-theme-web-design-agency-landing-page.brianshiroe.workers.dev/",
+    tags: ["Next.js", "Framer Motion", "Lenis Scroll"],
+  },
+  {
+    title: "Zhel Gold Showroom",
+    description:
+      "A sleek digital retail experience and custom landing page concept crafted for gold trading and high-value commodity display, utilizing polished, content-focused layouts.",
+    image: "/projects/zhel-gold.png",
+    link: "https://zhel-gold-jewelry.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS", "UI Design"],
+  },
+  {
+    title: "Creative Portfolio Showcase",
+    description:
+      "An editorial-grade interactive canvas featuring immersive asset presentation, fluid layouts, and smooth route transitions tailored for high-end graphic and interface designs.",
+    image: "/projects/creative-portfolio.png",
+    link: "https://award-winning-website-9d6.pages.dev/",
+    tags: ["Next.js", "Framer Motion", "Creative Ops"],
+  },
+  {
+    title: "Minimalist Style Portfolio",
+    description:
+      "A beautifully understated, content-first portfolio designed for a creative professional, stripping away visual noise to focus strictly on typography, space, and core projects.",
+    image: "/projects/simple-portfolio.png",
     link: "https://example.com",
+    tags: ["Next.js", "Minimal Design", "Tailwind CSS"],
   },
 ] as const;
