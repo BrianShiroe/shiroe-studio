@@ -77,7 +77,7 @@ export const Navbar = () => {
             ))}
 
             {/* Source Code */}
-            <Link
+            {/* <Link
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
@@ -85,7 +85,7 @@ export const Navbar = () => {
             >
               Source Code
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[rgb(112,66,248)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
