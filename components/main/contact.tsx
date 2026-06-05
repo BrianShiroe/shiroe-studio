@@ -3,7 +3,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, SparklesIcon, CodeBracketIcon } fr
 const contactItems = [
   {
     title: "Email",
-    value: "hello@shiroestudio.com",
+    value: "brianshiroe@gmail.com",
     href: "mailto:hello@shiroestudio.com",
     icon: EnvelopeIcon,
   },
