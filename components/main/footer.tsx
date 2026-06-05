@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className="relative w-7 h-7 flex items-center justify-center">
               <Image 
                 src="/logo.png" 
-                alt="BH Brand Logo"
+                alt="ShiroeStudio Logo"
                 width={80}
                 height={80}
                 priority
@@ -29,12 +29,11 @@ export const Footer = () => {
               />
             </div>
             <div className="text-[20px] font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
-              brianshiroe
+              ShiroeStudio
             </div>
           </div>
           <p className="text-[14px] text-gray-400 font-light leading-relaxed tracking-wide">
-            Web design, digital growth, and operations in one package. Building high-performing SEO websites and
-            polished digital experiences.
+            Digital agency crafting websites, brand systems, and marketing experiences for growth-driven companies.
           </p>
         </div>
 
@@ -104,7 +103,7 @@ export const Footer = () => {
 
       {/* Bottom Row: Copyright */}
       <div className="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-gray-800/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] text-gray-500 font-light tracking-wide">
-        <div className="select-none">&copy; {new Date().getFullYear()} brianshiroe. All rights reserved.</div>
+        <div className="select-none">&copy; {new Date().getFullYear()} ShiroeStudio. All rights reserved.</div>
         <div className="flex gap-6 text-gray-600 select-none">
           <span>Built with Next.js & Framer Motion</span>
         </div>

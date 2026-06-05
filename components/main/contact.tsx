@@ -3,8 +3,8 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, SparklesIcon, CodeBracketIcon } fr
 const contactItems = [
   {
     title: "Email",
-    value: "brianshiroe@gmail.com",
-    href: "mailto:brianshiroe@gmail.com",
+    value: "hello@shiroestudio.com",
+    href: "mailto:hello@shiroestudio.com",
     icon: EnvelopeIcon,
   },
   {
@@ -14,9 +14,9 @@ const contactItems = [
     icon: PhoneIcon,
   },
   {
-    title: "GitHub",
-    value: "github.com/brianshiroe",
-    href: "https://github.com/brianshiroe",
+    title: "Website",
+    value: "shiroestudio.com",
+    href: "https://shiroestudio.com",
     icon: CodeBracketIcon,
   },
   {
@@ -37,13 +37,13 @@ export const Contact = () => {
           {/* Left Side: Editorial Content */}
           <div className="flex flex-col gap-5 items-start">
             <span className="text-[13px] font-semibold uppercase tracking-[0.2em] text-[rgb(112,66,248)]">
-              Contact Me
+              Contact
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-[48px] font-semibold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[rgb(112,66,248)]">
               Let's turn your next idea into a launch-ready experience.
             </h1>
             <p className="max-w-full md:max-w-[620px] text-gray-400 text-base md:text-[17px] leading-relaxed font-light tracking-wide">
-              I'm available for freelance projects, long-term collaborations, and digital operations work in Dubai or remote. Select any channel to discuss website design, digital marketing assets, or custom system builds.
+              ShiroeStudio is available for new agency partnerships, digital campaigns, and website launches in Dubai or remote. Select any channel to discuss brand strategy, website design, or marketing systems.
             </p>
           </div>
 

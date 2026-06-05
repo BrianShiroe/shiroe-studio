@@ -2,7 +2,7 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { FaFacebook } from "react-icons/fa";
 
 export const LINKS = {
-  sourceCode: "https://github.com/brianshiroe/space-portfolio",
+  sourceCode: "https://shiroestudio.com",
 };
 
 export const NAV_LINKS = [
@@ -11,19 +11,19 @@ export const NAV_LINKS = [
     link: "#home",
   },
   {
-    title: "About Me",
+    title: "About Us",
     link: "#about-me",
   },
   {
-    title: "Skills",
+    title: "Capabilities",
     link: "#skills",
   },
   {
-    title: "Projects",
+    title: "Work",
     link: "#projects",
   },
   {
-    title: "Contact Me",
+    title: "Contact",
     link: "#contact",
   },
 ] as const;
@@ -32,17 +32,17 @@ export const SOCIALS = [
   {
     name: "GitHub",
     icon: RxGithubLogo,
-    link: "https://github.com/brianshiroe",
+    link: "https://github.com/shiroestudio",
   },
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://linkedin.com/in/brianshiroe",
+    link: "https://www.linkedin.com/company/shiroestudio",
   },
   {
     name: "Facebook",
     icon: FaFacebook,
-    link: "https://facebook.com/brianshiroe",
+    link: "https://facebook.com/shiroestudio",
   },
 ] as const;
 
@@ -53,17 +53,17 @@ export const FOOTER_DATA = [
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/brianshiroe",
+        link: "https://github.com/shiroestudio",
       },
       {
         name: "LinkedIn",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com/in/brianshiroe",
+        link: "https://www.linkedin.com/company/shiroestudio",
       },
       {
         name: "Facebook",
         icon: FaFacebook,
-        link: "https://facebook.com/brianshiroe",
+        link: "https://facebook.com/shiroestudio",
       },
     ],
   },
@@ -338,7 +338,7 @@ export const PROJECTS = [
     description:
       "An immersive agency landing page leveraging fluid Lenis smooth scrolling, micro-interactions, and cinematic Framer Motion timelines to deliver a highly interactive digital experience.",
     image: "/projects/saurai-web.png", // Maintained your file naming convention
-    link: "https://samurai-theme-web-design-agency-landing-page.brianshiroe.workers.dev/",
+    link: "https://shiroestudio.com",
     tags: ["Next.js", "Framer Motion", "Lenis Scroll"],
   },
   {

@@ -24,7 +24,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Web Design | Web Develop | Graphics Design
+            Digital strategy | Brand systems | Website design
           </h1>
         </motion.div>
 
@@ -33,11 +33,11 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-full"
         >
           <span>
-            Providing{" "}
+            ShiroeStudio builds{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              the best
+              bold digital brands
             </span>{" "}
-            project experience.
+            with measurable impact.
           </span>
         </motion.div>
 
@@ -45,7 +45,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I specialize in high-end UI/UX design, modern web development, and impact-driven graphics design and branding. I translate distinct brand strategies into immersive layouts, fluid user interfaces, and memorable visual assets.
+          ShiroeStudio helps brands launch distinctive websites, sleek digital campaigns, and cohesive visual systems. We blend strategy, design, and development to turn complex business goals into polished customer experiences.
         </motion.p>
 
         {/* <motion.a

@@ -58,14 +58,14 @@ export const Navbar = () => {
         <Link href="#home" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
           <Image
             src="/logo.png"
-            alt="Logo"
+            alt="ShiroeStudio Logo"
             width={40}
             height={40}
             draggable={false}
             className="cursor-pointer object-contain"
           />
           <div className="hidden md:flex items-center font-bold ml-[10px] text-gray-300 tracking-wide select-none">
-            brianshiroe
+            ShiroeStudio
           </div>
         </Link>
 

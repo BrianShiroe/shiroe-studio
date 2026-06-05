@@ -3,22 +3,22 @@ import { BriefcaseIcon, DocumentTextIcon, GlobeAltIcon, MapPinIcon, SparklesIcon
 const facts = [
   {
     title: "Location",
-    value: "Al Rigga, Dubai, UAE",
+    value: "Dubai, UAE",
     icon: MapPinIcon,
   },
   {
-    title: "Nationality",
-    value: "Filipino",
+    title: "Services",
+    value: "Web & Brand",
     icon: GlobeAltIcon,
   },
   {
-    title: "Experience",
-    value: "1 year",
+    title: "Clients",
+    value: "20+ brands",
     icon: BriefcaseIcon,
   },
   {
     title: "Projects",
-    value: "50+ completed",
+    value: "50+ launches",
     icon: DocumentTextIcon,
   },
 ];
@@ -29,16 +29,13 @@ export const About = () => {
       <div className="max-w-[1200px] w-full px-6">
         <div className="flex flex-col gap-4 items-start">
           <span className="text-[14px] font-semibold uppercase tracking-[0.2em] text-[rgb(112,66,248)]">
-            About Me
+            About Us
           </span>
           <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Web design, digital growth, and operations in one package.
+            Creative strategy, digital growth, and brand clarity.
           </h1>
           <p className="max-w-[760px] text-gray-300 text-[17px] leading-relaxed">
-            I am Brian Haw, a Dubai-based Office Administrator, Social Media Manager,
-            Web Designer & Developer, and Graphics Designer. I build high-performing
-            SEO websites, manage multi-brand social channels, and design polished digital
-            experiences that make operations smoother and marketing more effective.
+            ShiroeStudio is a digital agency helping companies in Dubai and beyond design, build, and grow purposeful digital products. We create websites, marketing campaigns, and branded experiences that help businesses stand out and convert.
           </p>
         </div>
 
@@ -46,7 +43,7 @@ export const About = () => {
           <div className="space-y-6">
             <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] p-8 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.18)]">
               <p className="text-gray-400 leading-relaxed text-[16px]">
-                Versatile professional with 1 year of experience developing 30+ SEO websites—boosting traffic by 500%—managing 25+ social channels across 5 brands, and completing 50+ projects with a 94% satisfaction rate. I specialize in ERP-driven operations, digital growth strategy, graphic and interface design, and workflow automation.
+                  ShiroeStudio delivers polished websites, marketing assets, and digital systems for growth-focused brands. Our approach blends design, conversion, and technical performance into every project.
               </p>
             </div>
 
@@ -77,16 +74,16 @@ export const About = () => {
             </div>
             <div className="grid gap-4">
               <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Web & SEO Development</p>
-                <p className="text-gray-400 text-sm mt-1">Next.js, responsive landing pages, performance optimization, and search-driven layouts.</p>
+                <p className="text-white font-semibold">Digital Product Design</p>
+                <p className="text-gray-400 text-sm mt-1">Strategic UI/UX, conversion-focused landing pages, and brand-forward interface systems.</p>
               </div>
               <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Social Media & Marketing</p>
-                <p className="text-gray-400 text-sm mt-1">Multi-channel content strategy, brand consistency, and audience growth across 25+ profiles.</p>
+                <p className="text-white font-semibold">Brand & Campaign Strategy</p>
+                <p className="text-gray-400 text-sm mt-1">Positioning, messaging, and digital storytelling for cohesive campaign experiences.</p>
               </div>
               <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Design & Creative Ops</p>
-                <p className="text-gray-400 text-sm mt-1">Figma UI layouts, Canva graphics, CapCut motion assets, and polished editorial design.</p>
+                <p className="text-white font-semibold">Growth-Focused Development</p>
+                <p className="text-gray-400 text-sm mt-1">Modern web builds, fast performance, and scalable tools for long-term digital growth.</p>
               </div>
             </div>
           </div>

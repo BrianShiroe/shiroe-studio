@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Brian Haw | Web Developer Portfolio",
-  description: "Welcome to the full-stack portfolio of Brian Haw, specializing in immersive 3D web experiences, headless architecture, and high-performance frontend engineering.",
+  title: "ShiroeStudio | Digital Agency",
+  description: "ShiroeStudio is a Dubai-based digital agency crafting website design, brand systems, and marketing-driven digital experiences for ambitious companies.",
   keywords: [
     "reactjs",
     "nextjs",
@@ -28,7 +28,7 @@ export const siteConfig: Metadata = {
     "web-performance"
   ] as Array<string>,
   authors: {
-    name: "Brian Haw",
-    url: "https://github.com/BrianShiroe", // Update with your actual GitHub profile
+    name: "ShiroeStudio",
+    url: "https://shiroestudio.com",
   },
 } as const;
