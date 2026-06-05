@@ -2,7 +2,7 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { FaFacebook } from "react-icons/fa";
 
 export const LINKS = {
-  sourceCode: "https://shiroestudio.com",
+  sourceCode: "https://shiroedigital.com",
 };
 
 export const NAV_LINKS = [
@@ -32,17 +32,17 @@ export const SOCIALS = [
   {
     name: "GitHub",
     icon: RxGithubLogo,
-    link: "https://github.com/shiroestudio",
+    link: "https://github.com/shiroedigital",
   },
   {
     name: "LinkedIn",
     icon: RxLinkedinLogo,
-    link: "https://www.linkedin.com/company/shiroestudio",
+    link: "https://www.linkedin.com/company/shiroedigital",
   },
   {
     name: "Facebook",
     icon: FaFacebook,
-    link: "https://facebook.com/shiroestudio",
+    link: "https://facebook.com/shiroedigital",
   },
 ] as const;
 
@@ -53,17 +53,17 @@ export const FOOTER_DATA = [
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/shiroestudio",
+        link: "https://github.com/shiroedigital",
       },
       {
         name: "LinkedIn",
         icon: RxLinkedinLogo,
-        link: "https://www.linkedin.com/company/shiroestudio",
+        link: "https://www.linkedin.com/company/shiroedigital",
       },
       {
         name: "Facebook",
         icon: FaFacebook,
-        link: "https://facebook.com/shiroestudio",
+        link: "https://facebook.com/shiroedigital",
       },
     ],
   },
@@ -338,7 +338,7 @@ export const PROJECTS = [
     description:
       "An immersive agency landing page leveraging fluid Lenis smooth scrolling, micro-interactions, and cinematic Framer Motion timelines to deliver a highly interactive digital experience.",
     image: "/projects/saurai-web.png", // Maintained your file naming convention
-    link: "https://shiroestudio.com",
+    link: "https://shiroedigital.com",
     tags: ["Next.js", "Framer Motion", "Lenis Scroll"],
   },
   {

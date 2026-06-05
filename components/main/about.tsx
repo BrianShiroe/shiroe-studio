@@ -35,7 +35,7 @@ export const About = () => {
             Creative strategy, digital growth, and brand clarity.
           </h1>
           <p className="max-w-[760px] text-gray-300 text-[17px] leading-relaxed">
-            ShiroeStudio is a digital agency helping companies in Dubai and beyond design, build, and grow purposeful digital products. We create websites, marketing campaigns, and branded experiences that help businesses stand out and convert.
+            Shiroe Digital is a digital agency helping companies in Dubai and beyond design, build, and grow purposeful digital products. We create websites, marketing campaigns, and branded experiences that help businesses stand out and convert.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export const About = () => {
           <div className="space-y-6">
             <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] p-8 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.18)]">
               <p className="text-gray-400 leading-relaxed text-[16px]">
-                  ShiroeStudio delivers polished websites, marketing assets, and digital systems for growth-focused brands. Our approach blends design, conversion, and technical performance into every project.
+                  Shiroe Digital delivers polished websites, marketing assets, and digital systems for growth-focused brands. Our approach blends design, conversion, and technical performance into every project.
               </p>
             </div>
 

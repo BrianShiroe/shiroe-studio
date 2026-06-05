@@ -4,7 +4,7 @@ const contactItems = [
   {
     title: "Email",
     value: "brianshiroe@gmail.com",
-    href: "mailto:hello@shiroestudio.com",
+    href: "mailto:hello@shiroedigital.com",
     icon: EnvelopeIcon,
   },
   {
@@ -15,8 +15,8 @@ const contactItems = [
   },
   {
     title: "Website",
-    value: "shiroestudio.com",
-    href: "https://shiroestudio.com",
+    value: "shiroedigital.com",
+    href: "https://shiroedigital.com",
     icon: CodeBracketIcon,
   },
   {
@@ -43,7 +43,7 @@ export const Contact = () => {
               Let's turn your next idea into a launch-ready experience.
             </h1>
             <p className="max-w-full md:max-w-[620px] text-gray-400 text-base md:text-[17px] leading-relaxed font-light tracking-wide">
-              ShiroeStudio is available for new agency partnerships, digital campaigns, and website launches in Dubai or remote. Select any channel to discuss brand strategy, website design, or marketing systems.
+              Shiroe Digital is available for new agency partnerships, digital campaigns, and website launches in Dubai or remote. Select any channel to discuss brand strategy, website design, or marketing systems.
             </p>
           </div>
 

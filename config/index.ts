@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "ShiroeStudio | Digital Agency",
-  description: "ShiroeStudio is a Dubai-based digital agency crafting website design, brand systems, and marketing-driven digital experiences for ambitious companies.",
+  title: "Shiroe Digital | Digital Agency",
+  description: "Shiroe Digital is a Dubai-based digital agency crafting website design, brand systems, and marketing-driven digital experiences for ambitious companies.",
   keywords: [
     "reactjs",
     "nextjs",
@@ -28,7 +28,7 @@ export const siteConfig: Metadata = {
     "web-performance"
   ] as Array<string>,
   authors: {
-    name: "ShiroeStudio",
-    url: "https://shiroestudio.com",
+    name: "Shiroe Digital",
+    url: "https://shiroedigital.com",
   },
 } as const;
