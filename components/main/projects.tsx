@@ -8,7 +8,7 @@ export const Projects = () => {
       className="flex flex-col items-center justify-center py-24 relative z-10 overflow-hidden"
     >
       <div className="max-w-[1200px] w-full px-6 flex flex-col gap-12">
-        <div className="flex flex-col gap-3 items-start text-left">
+        <div className="flex flex-col gap-3 items-center text-center">
           <span className="text-[14px] font-semibold uppercase tracking-[0.25em] text-[rgb(112,66,248)]">
             Selected Works
           </span>

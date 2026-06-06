@@ -1,33 +1,17 @@
 import { BriefcaseIcon, DocumentTextIcon, GlobeAltIcon, MapPinIcon, SparklesIcon } from "@heroicons/react/24/outline";
 
 const facts = [
-  {
-    title: "Location",
-    value: "Dubai, UAE",
-    icon: MapPinIcon,
-  },
-  {
-    title: "Services",
-    value: "Web & Brand",
-    icon: GlobeAltIcon,
-  },
-  {
-    title: "Clients",
-    value: "20+ brands",
-    icon: BriefcaseIcon,
-  },
-  {
-    title: "Projects",
-    value: "50+ launches",
-    icon: DocumentTextIcon,
-  },
+  { title: "Location", value: "Dubai, UAE", icon: MapPinIcon },
+  { title: "Services", value: "Web & Brand", icon: GlobeAltIcon },
+  { title: "Clients", value: "20+ brands", icon: BriefcaseIcon },
+  { title: "Projects", value: "50+ launches", icon: DocumentTextIcon },
 ];
 
 export const About = () => {
   return (
     <section id="about-me" className="flex flex-col items-center justify-center py-20">
       <div className="max-w-[1200px] w-full px-6">
-        <div className="flex flex-col gap-4 items-start">
+        <div className="flex flex-col gap-4 items-center text-center">
           <span className="text-[14px] font-semibold uppercase tracking-[0.2em] text-[rgb(112,66,248)]">
             About Us
           </span>
@@ -41,9 +25,9 @@ export const About = () => {
 
         <div className="grid gap-8 lg:grid-cols-[1.3fr_0.9fr] mt-14">
           <div className="space-y-6">
-            <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] p-8 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.18)]">
+            <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] p-8 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.18)] transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:bg-white/[0.07] hover:shadow-[0_20px_80px_rgba(112,66,248,0.08)]">
               <p className="text-gray-400 leading-relaxed text-[16px]">
-                  Shiroe Digital delivers polished websites, marketing assets, and digital systems for growth-focused brands. Our approach blends design, conversion, and technical performance into every project.
+                Shiroe Digital delivers polished websites, marketing assets, and digital systems for growth-focused brands. Our approach blends design, conversion, and technical performance into every project.
               </p>
             </div>
 
@@ -51,21 +35,26 @@ export const About = () => {
               {facts.map((fact) => {
                 const Icon = fact.icon;
                 return (
-                  <div key={fact.title} className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-white/5 p-6">
+                  <div
+                    key={fact.title}
+                    className="group rounded-3xl border border-[rgba(255,255,255,0.08)] bg-white/5 p-6 transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(112,66,248,0.1)]"
+                  >
                     <div className="flex items-center gap-3 mb-3 text-[rgb(112,66,248)]">
-                      <Icon className="h-5 w-5" />
+                      <Icon className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                       <span className="text-sm uppercase tracking-[0.16em] text-gray-400">
                         {fact.title}
                       </span>
                     </div>
-                    <div className="text-xl font-semibold text-white">{fact.value}</div>
+                    <div className="text-xl font-semibold text-white transition-colors duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[rgb(112,66,248)]">
+                      {fact.value}
+                    </div>
                   </div>
                 );
               })}
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] bg-white/5 p-8 shadow-[0_20px_80px_rgba(0,0,0,0.18)]">
+          <div className="rounded-[32px] border border-[rgba(255,255,255,0.08)] bg-white/5 p-8 shadow-[0_20px_80px_rgba(0,0,0,0.18)] transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:shadow-[0_20px_80px_rgba(112,66,248,0.08)]">
             <div className="flex items-center gap-3 mb-6">
               <SparklesIcon className="h-6 w-6 text-purple-400" />
               <span className="text-sm uppercase tracking-[0.2em] text-[rgb(112,66,248)]">
@@ -73,16 +62,22 @@ export const About = () => {
               </span>
             </div>
             <div className="grid gap-4">
-              <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Digital Product Design</p>
+              <div className="group rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5 transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(112,66,248,0.08)]">
+                <p className="text-white font-semibold transition-colors duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[rgb(112,66,248)]">
+                  Digital Product Design
+                </p>
                 <p className="text-gray-400 text-sm mt-1">Strategic UI/UX, conversion-focused landing pages, and brand-forward interface systems.</p>
               </div>
-              <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Brand & Campaign Strategy</p>
+              <div className="group rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5 transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(112,66,248,0.08)]">
+                <p className="text-white font-semibold transition-colors duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[rgb(112,66,248)]">
+                  Brand & Campaign Strategy
+                </p>
                 <p className="text-gray-400 text-sm mt-1">Positioning, messaging, and digital storytelling for cohesive campaign experiences.</p>
               </div>
-              <div className="rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5">
-                <p className="text-white font-semibold">Growth-Focused Development</p>
+              <div className="group rounded-3xl border border-[rgba(255,255,255,0.08)] bg-black/10 p-5 transition-all duration-300 hover:border-[rgb(112,66,248)]/30 hover:bg-white/[0.04] hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(112,66,248,0.08)]">
+                <p className="text-white font-semibold transition-colors duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[rgb(112,66,248)]">
+                  Growth-Focused Development
+                </p>
                 <p className="text-gray-400 text-sm mt-1">Modern web builds, fast performance, and scalable tools for long-term digital growth.</p>
               </div>
             </div>
