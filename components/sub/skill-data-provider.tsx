@@ -39,7 +39,13 @@ export const SkillDataProvider = ({
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <Image 
+        src={`/skills/${src}`} 
+        width={width} 
+        height={height} 
+        alt={name} 
+        style={{ height: "auto" }} // FIX: Explicitly tells Next.js to preserve original aspect ratio dynamically
+      />
     </motion.div>
   );
 };

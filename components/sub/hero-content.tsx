@@ -24,7 +24,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Digital strategy | Brand systems | Website design
+            Digital Strategy | Web Development | Graphics | Dubai, UAE
           </h1>
         </motion.div>
 
@@ -33,11 +33,11 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-full"
         >
           <span>
-            Shiroe Digital builds{" "}
+            Shiroe Digital:{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              bold digital brands
+              Dubai's partner
             </span>{" "}
-            with measurable impact.
+            for bold digital transformation.
           </span>
         </motion.div>
 
@@ -45,15 +45,11 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Shiroe Digital helps brands launch distinctive websites, sleek digital campaigns, and cohesive visual systems. We blend strategy, design, and development to turn complex business goals into polished customer experiences.
+          Based in Dubai, Shiroe Digital helps businesses across the UAE launch 
+          distinctive websites, high-conversion campaigns, and cohesive visual systems. 
+          We blend strategy, design, and development to turn your business goals into 
+          polished, high-performance digital experiences.
         </motion.p>
-
-        {/* <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          Learn more
-        </motion.a> */}
       </div>
 
       <motion.div
@@ -62,7 +58,7 @@ export const HeroContent = () => {
       >
         <Image
           src="/hero-bg.svg"
-          alt="work icons"
+          alt="Digital Strategy and Development in Dubai"
           height={650}
           width={650}
           sizes="(max-width: 768px) 100vw, 650px"
