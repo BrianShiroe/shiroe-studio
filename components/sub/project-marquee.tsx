@@ -13,7 +13,7 @@ interface Project {
 }
 
 interface MarqueeProps {
-  projects: Project[];
+  projects: readonly Project[];
   direction?: "left" | "right";
 }
 
@@ -76,7 +76,7 @@ function ProjectCard({ src, title, description, link, tags = [] }: CardProps) {
 }
 
 export function ProjectMarquee({ projects, direction = "left" }: MarqueeProps) {
-  const doubled = [...projects, ...projects];
+  const tripled = [...projects, ...projects, ...projects];
 
   return (
     <div className="relative w-full overflow-hidden group/marquee">
@@ -90,7 +90,7 @@ export function ProjectMarquee({ projects, direction = "left" }: MarqueeProps) {
             : "animate-marquee-right"
         } group-hover/marquee:[animation-play-state:paused]`}
       >
-        {doubled.map((project, i) => (
+        {tripled.map((project, i) => (
           <ProjectCard
             key={`${project.title}-${i}`}
             src={project.image}

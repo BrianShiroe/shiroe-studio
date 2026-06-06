@@ -2,10 +2,6 @@ import { ProjectMarquee } from "@/components/sub/project-marquee";
 import { PROJECTS } from "@/constants";
 
 export const Projects = () => {
-  const mid = Math.ceil(PROJECTS.length / 2);
-  const row1 = PROJECTS.slice(0, mid);
-  const row2 = PROJECTS.slice(mid);
-
   return (
     <section
       id="projects"
@@ -27,8 +23,8 @@ export const Projects = () => {
       </div>
 
       <div className="w-full mt-10 flex flex-col gap-5">
-        <ProjectMarquee projects={row1} direction="left" />
-        <ProjectMarquee projects={row2} direction="right" />
+        <ProjectMarquee projects={PROJECTS} direction="left" />
+        <ProjectMarquee projects={PROJECTS} direction="right" />
       </div>
     </section>
   );

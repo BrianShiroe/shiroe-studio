@@ -11,16 +11,16 @@ export const NAV_LINKS = [
     link: "#home",
   },
   {
+    title: "Work",
+    link: "#projects",
+  },
+  {
     title: "About Us",
     link: "#about-me",
   },
   {
     title: "Capabilities",
     link: "#skills",
-  },
-  {
-    title: "Work",
-    link: "#projects",
   },
   {
     title: "Contact",
