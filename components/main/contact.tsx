@@ -14,9 +14,9 @@ const contactItems = [
     icon: PhoneIcon,
   },
   {
-    title: "Website",
-    value: "shiroedigital.com",
-    href: "https://shiroedigital.com",
+    title: "Portfolio",
+    value: "brianshiroe.com",
+    href: "https://brianshiroe.com",
     icon: CodeBracketIcon,
   },
   {
